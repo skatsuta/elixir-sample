@@ -28,8 +28,8 @@ config :logger, :console, format: "[$level] $message\n"
 
 # Configure your database
 config :elixir_sample, ElixirSample.Repo,
-  adapter: Ecto.Adapters.Postgres,
-  username: "postgres",
-  password: "postgres",
+  adapter: Ecto.Adapters.MySQL,
+  username: "root",
+  password: "",
   database: "elixir_sample_dev",
   pool_size: 10 # The amount of database connections in the pool
